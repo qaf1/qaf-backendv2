@@ -89,7 +89,7 @@ const authController = async (req: Request, res: Response) => {
         }
 
  
-         const response = await axios.post('https://test.salesforce.com/services/oauth2/token', body, {
+         const response = await axios.post('https://login.salesforce.com/services/oauth2/token', body, {
           headers: headers
         });
         console.log(response.data);
