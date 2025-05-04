@@ -30,7 +30,7 @@ const authController = async (req, res) => {
     };
 
     // External API call
-    const response = await axios.post('https://test.salesforce.com/services/oauth2/token', body, {
+    const response = await axios.post('https://login.salesforce.com/services/oauth2/token', body, {
       headers: headers,
     });
 
